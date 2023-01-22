@@ -3,5 +3,5 @@ name = "rpn_calc_jrk"
 version = "0.1.0"
 authors = ["jerok-kim <jerok.kim@gmail.com>"]
 description = "RPN(Reverse Polish Notation) library"
-licence = "MIT"
+licence = "MIT OR Apache-2.0"
 edition = "2021"
