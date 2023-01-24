@@ -1,5 +1,5 @@
 [package]
-name = "rust_programming_examples"
+name = "dlist"
 version = "0.1.0"
 edition = "2021"
 

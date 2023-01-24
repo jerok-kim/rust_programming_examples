@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="utf=8">
+<body>
+<script type="module">
+    // WebAssembly 로드
+    import init, {hello, rust_mul} from './pkg/wasm_hello.js';
+
+    // Promise 사양으로 라이브러리 로드
+    init().then(() => {
+        // 초기화가 완료되면 실행
+        // 인사 표시
+        setTimeout(() => {
+            hello('Rust');
+        }, 300);
+
+        // 곱셈을 실행한 결과 표시
+        const a = rust_mul(2000, 3);
+        document.getElementById('info').innerHTML = a;
+    });
+</script>
+<h1>index.html</h1>
+<h2 id="info"></h2>
+</body>
+</html>
